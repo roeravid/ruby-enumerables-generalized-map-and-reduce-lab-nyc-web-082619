@@ -1,6 +1,5 @@
 def map (array)
   negatized = []
-  array = negatized
   counter = 0
   while counter < array.length do
     negatized.push(yield(array[counter]))
