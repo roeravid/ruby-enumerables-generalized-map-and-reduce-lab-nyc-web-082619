@@ -1,12 +1,29 @@
 def map (array)
-  negatized = []
+  newArray = []
   counter = 0
   while counter < array.length do
-    negatized.push(yield(array[counter]))
+    newArray.push(yield(array[counter]))
     counter += 1
   end
-  negatized
+  newArray
 end
+
+
+def reduce (array, starting_point=nil)
+  if starting_point = true
+    num1 = starting_point
+    x=0
+  else
+    num1 = array[0]
+    x=1
+  end
+  while x < array.length
+    sum = yield(sum,array[x])
+    i+=1
+  end
+  sum
+end
+
 
 
 # def toNeg(arr = [1,2,3,-9])
